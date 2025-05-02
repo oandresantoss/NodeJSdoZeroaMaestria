@@ -10,5 +10,5 @@ readline.question('Qual a sua linguagem preferedida? ', (language) => {
             console.log(`A minha linguagem favorita é: ${language}`)
         }
     
-    readline.close
+    readline.close()
 })
