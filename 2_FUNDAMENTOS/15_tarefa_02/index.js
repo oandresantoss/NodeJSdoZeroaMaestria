@@ -15,7 +15,7 @@ inquirer.prompt([
   
     const nome = answers.nome;
     const idade = parseInt(answers.idade);
-    console.log(chalk.bgYellow.black(`o nome do aluno é: ${nome}, e a idade é ${idade}`));
+    console.log(chalk.bgYellow.black(`o nome do aluno é: ${nome}, e a idade é: ${idade} anos`));
 })
 .catch((err) => {
     console.log(chalk.red('Ocorreu um erro: '), err);
