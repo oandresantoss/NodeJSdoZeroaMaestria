@@ -11,4 +11,4 @@ inquirer
 
         console.log(chalk.bgYellosw.black(response))
     })
-    .catch((err) => console.logg(err))
+    .catch((err) => console.log(err))
