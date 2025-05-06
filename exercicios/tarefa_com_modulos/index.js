@@ -1,21 +1,22 @@
-const inquirer = require('inquirer')
+const inquirer = require('inquirer');
+const chalk = require('chalk');
 
-inquirer.createPromptModule([
+inquirer.prompt([
     {
-        name: 'p1',
-        nome: 'Qual o seu nome?',
+        name: 'nome',
+        message: 'Qual o seu nome?',
     },
     {
-        name: 'p2',
-        idade: 'Qual sua idade?',
-    },
+        name: 'idade',
+        message: 'Qual sua idade?',
+    }
  
 ]). then((answers) => {
-    console.log(answers)
-    const nome = (answers.p1)
-    const idade =(answers.p2)
-    
-
-    console.log(`o nome do aluno é: ${nome}, e a idade é ${idade}`)
+  
+    const nome = answers.nome;
+    const idade = parseInt(answers.idade);
+    console.log(chalk.bgYellow.black(`o nome do aluno é: ${nome}, e a idade é ${idade}`));
 })
-.catch(err => console.log(err))
+.catch((err) => {
+    console.log(chalk.red('Ocorreu um erro: '), err);
+});
