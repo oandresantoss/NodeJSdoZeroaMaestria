@@ -12,4 +12,4 @@ const soma = require('./soma').soma
 const a = Number(args['a'])
 const b = Number(args['b'])
 
-soma(3,5)
+soma(a,b)
