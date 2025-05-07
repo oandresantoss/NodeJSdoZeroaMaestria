@@ -6,7 +6,7 @@ console.log(args)
 
 const nome = args['nome']
 const profissao = args['profissao']
-const time = args ['time']
+const time = args['time']
 
 console.log(nome,profissao,time)
 
