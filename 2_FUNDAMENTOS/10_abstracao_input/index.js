@@ -17,3 +17,4 @@ inquirer.prompt([
     console.log(`A média é: ${media}`)
 })
 .catch(err => console.log(err))
+
