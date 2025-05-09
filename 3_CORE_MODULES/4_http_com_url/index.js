@@ -5,10 +5,17 @@ const port = 3000
 
 const server = http.createServer((req,res) => {
 
+    const urlInfo = require('url').parse(req.url, true)
+    const nome = urlInfo.query.nome
 
     res.statusCode = 200
     res.setHeader('contenty-typr', 'text/html')
-    res.end('<h1>Olá esse é meu primeiro sever com html!</h1><p>Testando atualização</p>',)
+    
+    if(!nome) {
+
+    }else {
+
+    }
 })
 
 server.listen(port, () => {
