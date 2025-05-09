@@ -13,9 +13,11 @@ console.count(`O valor de x é: ${x}, contagem`)
 
 // variaveis entre strings
 console.log("O nome dele é %s, e ele é programador", y)
+//foi substituido por templatescream + placehouder 
+console.log(`O nome dele é ${y}, e ele é programador`)
 
 
 // Limpeza do console
 setTimeout(() => {
     console.clear()
-}, 2000)
+}, 10000)

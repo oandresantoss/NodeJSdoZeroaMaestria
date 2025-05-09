@@ -5,3 +5,5 @@ try {
 } catch (err) {
     console.log(`Erro: ${err}`)
 }
+
+console.log(x)
