@@ -5,7 +5,7 @@ const port = 3000
 
 const server = http.createServer((req,res) => {
     res.statusCode = 200
-    res.setHeader('contenty-typr', 'text/html')
+    res.setHeader('contenty-type', 'text/html')
     res.end('<h1>Olá esse é meu primeiro sever com html!</h1><p>Testando atualização</p>',)
 })
 
