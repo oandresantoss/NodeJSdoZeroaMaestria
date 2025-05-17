@@ -4,7 +4,7 @@ const port = 3000
 
 const server = http.createServer((req, res) => {
 
-    res.write('Oi HTTP')
+    res.write('Servidor rodando')
     res.end()
 })
 
