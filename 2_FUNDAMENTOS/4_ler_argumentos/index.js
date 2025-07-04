@@ -58,4 +58,4 @@ string
 const texto = "abcdef";
 const parte = texto.slice(2, 4);
 
-console.log(parte); // "cd"
+console.log(parte); // "cd";*/
